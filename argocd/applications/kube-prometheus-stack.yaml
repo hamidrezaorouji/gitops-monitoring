@@ -38,3 +38,11 @@ spec:
       kind: ValidatingWebhookConfiguration
       jsonPointers:
         - /webhooks/0/clientConfig/caBundle
+    - group: monitoring.coreos.com
+      kind: Prometheus
+      jsonPointers:
+        - /status/terminatingReplicas
+    - group: monitoring.coreos.com
+      kind: Alertmanager
+      jsonPointers:
+        - /status/terminatingReplicas
