@@ -1,0 +1,15 @@
+kube-prometheus-stack:
+  prometheus:
+    prometheusSpec:
+      retention: 15d
+      serviceMonitorSelectorNilUsesHelmValues: false
+      podMonitorSelectorNilUsesHelmValues: false
+      ruleSelectorNilUsesHelmValues: false
+
+  grafana:
+    adminPassword: "admin"
+    persistence:
+      enabled: false  
+
+  alertmanager:
+    enabled: true
