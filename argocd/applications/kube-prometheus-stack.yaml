@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/your-username/gitops-monitoring.git
+    repoURL: https://github.com/hamidrezaorouji/gitops-monitoring.git
     targetRevision: main
     path: monitoring/kube-prometheus-stack
     helm:
